@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Condicionales: Ejercicio 1</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>    
+  </head>
+
+  <body>
+
+    <h1>Condicionales: Ejercicio 1</h1>
+    <section class="preview"></section>
+
+  </body>
+  
+  
+  <script>
+    let season = 'summer';
+    let response;
+
+    if ( season == "summer"){
+        response ="You are in summer bro!";
+    }
+    else{
+        respone =  "We don't know what station you are in";
+    }
+
+   /* if ( season == "winter"){
+        response = "You are in winter bro";
+    }
+    else{
+        response = "We don't know what station you are in";
+    }
+    */
+
+    const section = document.querySelector('section');
+
+    let para1 = document.createElement('p');
+    para1.textContent = response;
+    section.appendChild(para1);
+    
+  </script>
+
+</html>
