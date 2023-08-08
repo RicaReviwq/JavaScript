@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales en JavaScritp</title>
+</head>
+<body>
+
+
+    <h1>Condicionales en JavaScritp</h1>
+    
+
+    <script>
+
+       let age = 19;
+        let accessAllowed = (age > 18) ? true : false;
+        console.log(accessAllowed);
+
+
+        let age2 = prompt('age?', 18);
+
+        let message = (age2 < 3) ? 'Hi, baby!' :
+        (age2 < 18) ? 'Hello!' :
+        (age2 < 100) ? 'Greetings!' :
+        'What an unusual age!';
+
+        alert( message );
+
+
+        let company = prompt('Which company created JavaScript?', '');
+            (company == 'Netscape') ?
+                alert('Right!') : alert('Wrong.');
+    
+
+                if ("0") {
+  alert( 'Hello' );
+}
+
+//Ejercicio1 de condiciones
+
+let nombre = prompt("¿Cual es el nombre oficial de JavaScript", '');
+
+if ( nombre == "ECMAScript"){
+    alert("¡Correcto!");
+}
+else{
+    alert("Incorrecto, el nombre oficial es ECMAScript");
+}
+
+
+//Ejercicio 2 de condicionales
+
+let numero1 = prompt("Dame un numero", 9);
+
+if( numero1 >= 1){
+    alert("Tu  numero es mas grande que cero");
+}
+else if( numero1 <= 0){
+    alert ("Tu numero es negativo");
+}
+else if( numero1 = 0){
+    alert("Tu numero es igual a cero");
+}
+else{
+    alert("Ingresaste una letra, o un numero no valido");
+}
+alert(numero1);
+
+//Ejercicio 3 de condicionales
+
+
+let a = 2;
+let b = 1;
+let result = (a + b < 4) ? "Below" :
+"Over";
+
+alert (result);
+
+
+//Ejercicio 4 de condiciones
+
+let login = "Director";
+let mensaje = (login == 'Employee') ? 'Hello' :
+              (login == 'Director') ? 'Greetings' :
+              (login == '') ? 'No login' :
+              '';
+              alert (mensaje);
+
+//Ejercicio 1 de Switch
+ let c = 3;
+
+switch (c) {
+  case 4:
+    alert('Right!');
+    break;
+
+  case 3: // (*) grouped two cases
+  case 5:
+    alert('Wrong!');
+    alert("Why don't you take a math class?");
+    break;
+
+  default:
+    alert('The result is strange. Really.');
+} 
+
+//Ejercicio 2 de Switch
+//Escribe el código con if..else el que correspondería a lo siguiente switch:
+
+/*
+switch (browser) {
+  case 'Edge':
+    alert( "You've got the Edge!" );
+    break;
+
+  case 'Chrome':
+  case 'Firefox':
+  case 'Safari':
+  case 'Opera':
+    alert( 'Okay we support these browsers too' );
+    break;
+
+  default:
+    alert( 'We hope that this page looks ok!' );
+}
+*/
+
+let browser = prompt("Escoge un navegador",'');
+
+
+if (browser=="Edge"){
+    alert ("You've got the Edge!");
+}
+else if(browser=="Chrome" || browser=="Firefox" || browser=="Safari" ||browser== "Opera"){
+    alert( 'Okay we support these browsers too' );
+}
+else{
+    alert( 'We hope that this page looks ok!' );
+}
+
+//Ejercicio 3 de Switch
+//Vuelva a escribir el código a continuación usando una sola switchdeclaración:
+
+/*
+let a = +prompt('a?', '');
+
+if (a == 0) {
+  alert( 0 );
+}
+if (a == 1) {
+  alert( 1 );
+}
+
+if (a == 2 || a == 3) {
+  alert( '2,3' );
+}
+*/
+
+let numero = +prompt("Cuanto vale a?", '');
+
+switch (numero){
+    
+    case 0:
+        alert("El valor es 0");
+        break;
+
+        case 1:
+            alert("El valor es 1");
+            break;
+
+            case 2:
+            case 3:
+                alert("El valor es 2 o 3");
+                break;
+
+                default:
+                    alert("El valor ingresado es incorrecto o es demasiado grande");
+
+}
+
+
+
+    
+    </script>
+    
+
+</body>
+</html>

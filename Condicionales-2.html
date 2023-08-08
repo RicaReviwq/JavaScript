@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Condicionales: Ejercicio 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <h1>Condicionales: Ejercicio 2</h1>
+    <section class="preview"></section>
+
+  </body>
+  
+  
+  <script>
+    let response;
+    let score = 29;
+    let machineActive = true;
+  
+    // Add your code here
+    if (machineActive == false){    
+            response = "Enciende la maquina bro";
+    }
+    else{
+    repsone = "La maquina esta encendida";
+    if (score < 0 || score >100){
+        response ="¡Esto es imposible, ha ocurrido un error!";
+        
+    }
+    else if( score = 0 && score<=19){
+        response = "Esa fue una puntuación terrible: ¡fracaso total!";
+    }
+    else if( score = 20 && score<=39){
+        response = "Sabes algunas cosas, pero es una puntuación bastante mala. Necesita mejorar";
+    }
+    else if( score = 49 && score<=69){
+        response = "¡Hiciste un trabajo aceptable, no está mal!";
+    }
+    else if( score = 70 && score<=89){
+        response = "Esa es una gran puntuación, realmente sabes lo que haces";
+    }
+    else if( score = 90 && score<=100){
+        respone = "¡Qué puntaje tan asombroso! ¿Hiciste trampa? ¿Hablas en serio?";
+    }
+    
+}
+   
+  
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+
+    let para1 = document.createElement('p');
+    let para2 = document.createElement('p');
+
+    para1.textContent = `Your score is ${ score }`;
+    para2.textContent = response;
+
+    section.appendChild(para1);
+    section.appendChild(para2);
+    
+  </script>
+
+</html>

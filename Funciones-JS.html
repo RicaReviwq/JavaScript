@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Funciones en JavaScript</title>  
+  </head>
+<body>
+
+  <h1>Funciones en JavaScript</h1>
+  <script>
+    
+  /*
+    function favoriteAnimal(animal) {
+   return animal + " is my favorite animal!"
+         
+}
+ alert(favoriteAnimal('Pajarito'));
+  
+
+ //Funcion sencilla
+ function mensaje_1(){
+    console.log("Hola mundo, esta es una funcion simple");
+ }
+
+ mensaje_1();
+ mensaje_1();
+  
+
+ //Variable local
+ function mensaje_2(){
+    let mensaje = "Esta es una variable loca, accesible desde la propia funcion";
+
+    alert(mensaje);
+ }
+
+ mensaje_2();
+ //alert(mensaje); Este alert no mostrara nada, porque la variable 'mensaje' tiene un ambito local, y solo funciona dentro de la funcion 'mensaje_2'
+  
+//Variable externa
+
+let userName = 'John';//Esta es una variable externa a la
+
+function mensaje_3() {
+  userName = "Bob"; // Por lo que la funcion puede modificar el valor de la variable, ya que la variable es externa
+
+  let message = 'Hello, ' + userName;
+  alert(message);
+}
+
+alert( userName ); // Aqui se mostrara John antes de la llamada a la funcion
+
+mensaje_3(); // Aqui se mostrara 'Hola Bob'
+
+alert( userName ); //Y aqui se mostrara  Bob
+
+
+//Parametros de una funcion
+
+function mensaje_4(from1, text1) { // Parametros: from, text
+  alert(from1 + ': ' + text1);
+}
+
+mensaje_4('Ann', 'Hello!'); // Ann: Hello! (*)
+mensaje_4('Ann', "What's up?"); // Ann: What's up? (**)
+
+
+
+function mensaje_5(from2, text2) {
+
+from2 = '*' + from2 + '*'; // make "from" look nicer
+
+alert( from2 + ': ' + text2 );
+}
+
+let from = "Ricardo";
+
+mensaje_5(from, "Hello"); // *Ann*: Hello
+
+//Devolver valores
+
+function sum(a, b) {
+  return a + b;
+}
+
+let result = sum(1, 2);
+alert( result ); // 3
+
+
+function checkAge(age) {
+  if (age >= 18) {
+    return true;
+  } else {
+    return confirm('Do you have permission from your parents?');
+  }
+}
+
+let age = prompt('How old are you?', 18);
+
+if ( checkAge(age) ) {
+  alert( 'Access granted' );
+} else {
+  alert( 'Access denied' );
+}
+
+
+*/
+
+
+
+
+
+
+//Ejercicios de Funciones
+
+function checkAge_2(age) {
+
+   (age > 18) ? 'Tienes la mayoria de edad ' : confirm('Eres demasiado joven ¿Tienes el permiso de tus padres?');
+   
+}
+
+checkAge_2(10);
+
+
+
+
+
+function min(a,b){ 
+
+    if ( a<b ){
+        return a;
+    }
+    else{
+        return b;
+    }
+}
+
+alert( min(2, 5) ); //== 2
+alert( min(3, -1) ); //== -1
+alert( min(1, 1) ); //== 1
+
+
+
+
+function pow(x,n){
+    return x**n;
+}
+
+
+alert( pow(3, 2) );//= 3 * 3 = 9
+alert( pow(3,3) ); //= 3 * 3 * 3 = 27
+alert( pow(1,100) ); //= 1 * 1 * ...* 1 = 1
+
+
+
+
+
+
+
+//OPERADOR FLECHA 
+
+let sum = (a, b) => a + b;
+
+/* This arrow function is a shorter form of:
+
+let sum = function(a, b) {
+  return a + b;
+};
+*/
+alert( sum(1, 2) );
+
+
+let double = n => n * 2;
+// roughly the same as: let double = function(n) { return n * 2 }
+
+alert( double(3) ); // 6
+
+
+let suma = (a, b) => {  // the curly brace opens a multiline function
+  let result = a + b;
+  return result; // if we use curly braces, then we need an explicit "return"
+};
+
+alert( suma(1, 2) ); // 3
+
+
+
+
+  </script>
+
+
+
+</body>
+</html>
