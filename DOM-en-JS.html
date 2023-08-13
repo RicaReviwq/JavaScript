@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM en JavaScript</title>
+</head>
+<body>
+    
+
+
+<h1>
+    DOM en JavaScript
+  </h1>
+  <div id="container"></div>
+  
+
+
+<script>
+
+//Texto de ejemplo
+const container = document.querySelector('#container');
+
+var content = document.createElement('div');
+content.classList.add('content');
+content.textContent = 'This is the glorious text-content!';
+container.appendChild(content);
+
+
+
+//Texto ¡Heysoy rojo!
+var parrafo = document.createElement('p');
+parrafo.classList.add('parrafo1');
+parrafo.textContent = '¡Hey soy rojo!';
+parrafo.style.color = 'red';        
+container.appendChild(parrafo);
+
+
+//Texto ¡Hey soy azul!
+var h3 = document.createElement('h3');
+h3.classList.add('h3');
+h3.textContent = '¡Hey soy azul!';
+h3.style.color = 'blue';
+container.appendChild(h3);
+
+
+//Div con fondo rosa
+var container2 = document.createElement('div');
+container2.classList.add('fondo');
+container2.setAttribute('style','border:2px solid black; width:200px; height:200px; background: pink');
+container.appendChild(container2);
+
+
+var titulo = document.createElement('h1');
+titulo.textContent = 'Estoy dentro del div rosa';
+container2.appendChild(titulo);
+
+var parrafo2 = document.createElement('p');
+parrafo2.textContent = '¡YO TAMBIEN!';
+container2.appendChild(parrafo2);
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
