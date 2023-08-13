@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles en JavaScript</title>
+</head>
+<body>
+
+
+
+
+    <h1>Bucles en JavaScript</h1>
+    
+
+
+    <script>
+//Use el bucle for para generar números pares de 2 al 10.
+
+for( let i=0; i<11; i++){
+
+    if( i % 2 == 0){
+
+        alert(i);
+
+}
+}
+
+
+//Vuelva a escribir el código cambiando el bucle for por whiles in alterar su comportamiento 
+//(la salida debe permanecer igual).
+
+/*
+for (let i = 0; i < 3; i++) {
+  alert( `number ${i}!` );
+}
+*/
+let a = 0;
+
+
+while( a < 3){
+
+alert( `number ${a}!` );
+a++;
+}
+
+
+
+//Escriba un bucle que solicite un número mayor que 100.
+//Si el visitante ingresa otro número, pídale que lo ingrese nuevamente.
+
+
+let numero = prompt("Ingresa un numero mayor que 100");
+
+while( numero < 100 ){
+    numero = prompt("El numero es menor que 100, porfavor ingresa un numero mas grande");
+}
+
+alert("Bien echo el numero es mas grande que 100");
+
+
+//Escribe un bucle que imprima los numeros primos desde 0 hasta 10
+
+
+for( let b = 0; b < 10; b++){ 
+
+
+if( b%b==0){ 
+    console.log(b);
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
